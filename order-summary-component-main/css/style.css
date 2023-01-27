@@ -21,12 +21,6 @@ body {
     padding: 1rem;
 }
 
-@media screen and (max-width: 675px) {
-    body {
-        background: url('../images/pattern-background-mobile.svg') top center no-repeat;
-    }
-}
-
 main {
     background: #fff;
     max-width: 416px;
@@ -127,3 +121,17 @@ main button:hover {
 #cancel-order:hover {
     color: hsl(223, 47%, 23%);
 }
+
+@media screen and (max-width: 650px) {
+    body {
+      background: url('../images/pattern-background-mobile.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 3rem;
+    }
+  }
