@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 550px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.product__image-src {
+    height: 100%;
+    margin-right: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.product__preview {
+    margin: 20px 40px 0 15px;
+}
+
+
+.product__preview-type {
+    font-family: "Mountserrat", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+}
+
+.product__preview-name {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.product__description {
+    color: hsl(228, 12%, 48%);
+    font-family: "Mountserrat", sans-serif;
+    font-size:1rem;
+}
+
+.price {
+    display: flex;
+    margin: 20px 0;
+}
+
+.price__product {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.price__product-old {
+    text-decoration: line-through;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.product__button {
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 30px 0;
+    transition: background;
+}
+
+.product__button:active {
+    background: hsl(212, 21%, 14%);
+}
